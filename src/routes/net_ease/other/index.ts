@@ -2,7 +2,7 @@
  * @Author: ShirahaYuki  shirhayuki2002@gmail.com
  * @Date: 2026-01-07 16:24:18
  * @LastEditors: ShirahaYuki  shirhayuki2002@gmail.com
- * @LastEditTime: 2026-01-07 19:55:09
+ * @LastEditTime: 2026-01-07 22:39:55
  * @FilePath: /server/src/routes/net_ease/other/index.ts
  * @Description: 其他相关路由集合
  *
@@ -19,6 +19,7 @@ import * as recommend_resource from "./recommend_playlist.js";
 import * as recommend_songs from "./recommend_song.js";
 import * as ugc_album_get from "./ugc_album_get.js";
 import * as vip_info_v2 from "./vip_info_v2.js";
+import * as intelligence from "./intelligence.js";
 
 const othor_router: Router = Router();
 
@@ -33,6 +34,7 @@ const modules = [
   recommend_songs,
   ugc_album_get,
   vip_info_v2,
+  intelligence,
 ];
 
 // 统一注册

@@ -241,3 +241,40 @@ export interface VipInfoResponse {
   };
   code: number;
 }
+//-----------------------intelligence---------------------------------------------------
+/**
+ * @description: 心动模式数据
+ */
+export interface IntelligenceResponse {
+  message: string;
+  data: {
+    id: number;
+    songInfo: {
+      privilege: {
+        id: 2728427776;
+        [key: string]: any;
+      };
+      dt: number;
+      id: number;
+      publishTime: number;
+      mv: number;
+      al: {
+        picUrl: string;
+        name: string;
+        tns: string[];
+        [key: string]: any;
+      };
+      alia: string[];
+      ar: {
+        name: string;
+        tns: string[];
+        alias: string[];
+        id: number;
+      }[];
+      name: string;
+      tns: string[];
+      [key: string]: any;
+    };
+  }[];
+  code: number;
+}
